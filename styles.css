@@ -1,0 +1,165 @@
+@keyframes heart {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: -webkit-linear-gradient(90deg, #b3dcfd,#a17aa9,#30d5c8);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(90deg, #b3dcfd,#a17aa9,#30d5c8);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    font-family: 'Alegreya', serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.welcomeScreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    transition: all .9s;
+}
+.welcomeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart_img {
+    animation: heart 2s infinite;
+    width: 200px;
+    height: 200px;
+}
+
+.touchText {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.353);
+    width: 100%;
+    height: 100%;
+}
+
+.mainText {
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+}
+
+.heart_img {
+    animation: heart 2s infinite;
+    width: 200px;
+    height: 200px;
+}
+
+.heart {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    transform: translateY(0px);
+    transition-property: transform, opacity;
+}
+
+.ease-in {
+    visibility: initial;
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition-duration: 8s, 3s;
+}
+
+.ease-in2 {
+    visibility: initial;
+    opacity: 1;
+    transition-duration: 6s, 9s;
+    transition-timing-function: ease-in;
+}
+
+.ease-out2 {
+    visibility: initial;
+    opacity: 1;
+    transition-duration: 9s, 7s;
+    transition-timing-function: ease-out;
+}
+
+.ease-out {
+    visibility: initial;
+    opacity: 1;
+    transition-duration: 7s, 5s;
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out2 {
+    visibility: initial;
+    opacity: 1;
+    transition-duration: 8s, 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.ease-in-out {
+    visibility: initial;
+    opacity: 1;
+    transition-duration: 7s, 8s;
+    transition-timing-function: ease-in-out;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #414141;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.7s all;
+    outline: none;
+    /* opacity: .4; */
+}
+
+.btn:disabled {
+    background-color: rgba(255, 255, 255, 0.473);
+}
